@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantando Together - Sorria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Cantando Together Logo" class="logo">
+        </header>
+
+        <main class="player-container">
+            <div class="track-info">
+                <div class="vinyl-record" id="record">
+                    <div class="record-center"></div>
+                </div>
+                <h1 class="song-title">Sorria</h1>
+                <p class="artist-name">Cantando Together</p>
+            </div>
+
+            <!-- Aqui você pode adicionar o arquivo de áudio depois. Ex: <audio id="audio-player" src="sorria.mp3"></audio> -->
+            <audio id="audio-player" src="sorria.mp3" autoplay></audio>
+
+            <div class="controls">
+                <button class="btn-play" id="play-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="play-icon">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                </button>
+            </div>
+
+            <p class="instruction">Toque para começar</p>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
